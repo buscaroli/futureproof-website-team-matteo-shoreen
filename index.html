@@ -12,9 +12,9 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-custom">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-custom text-center">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#"><img src="images/flag.png" alt="Hungary flag"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,6 +65,49 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!-- Accordian -->
+<section>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Location
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <img class="map" src="images\map.png" alt="map">
+                Tihany /ˈtihɒɲ/ is a village on the northern shore of Lake Balaton on the Tihany Peninsula (Hungary, Veszprém County). The whole peninsula is a historical district.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              History
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                The center of the district is the Benedictine Tihany Abbey, which was founded in 1055 AD by András (Andrew) I, who is buried in the crypt. The founding charter of this abbey is the first extant record of Hungarian language, preserved in Pannonhalma Benedictine Archabbey. The church itself was rebuilt in baroque style in 1754. The still functioning abbey is a popular tourist attraction due to its historical and artistic significance. It also has the best view of Lake Balaton.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What Is Tihany Known For?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Tihany is famous for the echo, existing since the 18th century. There were poems written for this echo, like by Mihály Csokonai Vitéz and Mihály Vörösmarty, but the most famous is by János Garay, summing up the legend of the place. The echo has since abated, due to changes in the landscape. The other part of the legend concerns with the "goats' nails", washed ashore from Balaton, which are in fact corners of prehistoric clams. According to the story, there was a princess with golden-haired goats, but she was too proud and hard of heart and was punished (cursed by the king of the lake): her goats were lost in Balaton, only their nails remained, and she was obliged to answer to every passers-by. A stone, remembering the Shouting Girl, is still to be seen near the village.
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
   
 </body>
 
@@ -96,5 +139,6 @@
     });
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
 
